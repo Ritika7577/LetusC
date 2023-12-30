@@ -1,0 +1,13 @@
+/*  If lengths of three sides of a triangle are input through the 
+keyboard, write a program to find the area of the triangle.*/
+#include <stdio.h>
+#include <math.h>
+int main(){
+    float sidea, sideb, sidec, sum, area;
+    printf("Enterthe length of sides :\n");
+    scanf("%f%f%f", &sidea, &sideb, &sidec);
+    sum=(sidea+sideb+sidec)/2;
+    area = sqrt((sum-sidea)*(sum-sideb)*(sum-sidec)*sum);    
+    printf("Area = %.2f\n", area);
+    return 0;
+}
